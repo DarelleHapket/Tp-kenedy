@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.IndexController">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-6.0" layoutY="5.0" prefHeight="500.0" prefWidth="226.0">
+               <children>
+                  <AnchorPane layoutY="-2.0" prefHeight="500.0" prefWidth="211.0" style="-fx-background-color: #4578;">
+                     <children>
+                        <Text layoutX="24.0" layoutY="247.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.87" strokeType="OUTSIDE" strokeWidth="0.0" text="KENEDY APP" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button id="entre" layoutX="436.0" layoutY="199.0" mnemonicParsing="false" onMouseClicked="#btnSearch" style="-fx-background-color: #4578;" text="ENtrer" textFill="WHITE" />
+            <ChoiceBox id="liste" fx:id="liste" layoutX="265.0" layoutY="83.0" prefWidth="150.0" />
+            <RadioButton fx:id="searchBySerialRadio" layoutX="284.0" layoutY="168.0" selected="true" text="Numéro de série" />
+          
+            
+            <TextField id="cherche" fx:id="cherche" layoutX="265.0" layoutY="199.0" promptText="rechercher" />
+            <TextField id="appareil" layoutX="265.0" layoutY="20.0" prefHeight="24.0" prefWidth="239.0" text="Selectionner votre appareil" />
+            <Label id="vole" fx:id="vole" layoutX="253.0" layoutY="273.0" prefHeight="48.0" prefWidth="275.0" style="-fx-background-color: #4578;" text="Appareil voler" />
+            <TextArea id="detail" fx:id="detail" layoutX="230.0" layoutY="398.0" prefHeight="86.0" prefWidth="413.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
